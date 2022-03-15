@@ -48,7 +48,7 @@ fun main() {
     fun increaseDirty( start: Int) = start + 1
     println(updateDirty(15, ::increaseDirty))
 
-    var dirtyLevel = 19;
-    dirtyLevel = updateDirty(dirtyLevel) { dirtyLevel -> dirtyLevel + 23}
+    var dirtyLevelProperty1 = 19;
+    dirtyLevelProperty1 = updateDirty(dirtyLevel) { dirtyLevel -> dirtyLevel + 23}
     println(dirtyLevel)
 }
